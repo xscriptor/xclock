@@ -1,0 +1,21 @@
+# xclock Roadmap
+
+- [x] **Project Setup**
+    - [x] Initialize Rust project
+    - [x] Configure dependencies (`clap`, `chrono`, `crossterm`, `ratatui`)
+- [x] **Core Functionality**
+    - [x] Implement ASCII digit rendering system
+    - [x] Implement Clock Mode (display current time)
+    - [x] Implement Countdown Mode (timer functionality)
+    - [x] Implement Argument Parsing (CLI flags/options)
+- [x] **UI/UX**
+    - [x] Center alignment and responsive resizing
+    - [x] Color support
+    - [x] Keybindings (quit, etc.)
+- [x] **Distribution Scripts**
+    - [x] Create `install.sh` (Linux/macOS)
+    - [x] Create `uninstall.sh` (Linux/macOS)
+    - [x] Create `install.ps1` (Windows)
+    - [x] Create `uninstall.ps1` (Windows)
+- [x] **Documentation**
+    - [x] Comprehensive `README.md` (English)
