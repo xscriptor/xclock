@@ -1,6 +1,22 @@
-# xclock
+<h1 align="center"> Xclock </h1>
+
+<div align="center">
+
+![rust](https://xscriptordev.github.io/badges/languages/rust.svg) ![shell](https://xscriptordev.github.io/badges/languages/shell.svg) ![powershell](https://xscriptordev.github.io/badges/languages/powershell.svg)
 
 xclock is a terminal-based clock application written in Rust, inspired by `ttyclock`. It features a digital clock with ASCII art, countdown timers, and various customization options.
+
+<p align="center"> <img src="./assets/icon.png" width="100" alt="Xscriptor Theme logo" /> </p>
+
+</div>
+
+## Preview
+
+<p align="center">
+  <a href="./assets/previews/preview01.png">
+    <img src="./assets/previews/preview01.png" alt="Main preview" width="450"/>
+  </a>
+</p>
 
 ## Features
 

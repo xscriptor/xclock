@@ -5,7 +5,7 @@ if (!(Get-Command cargo -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
-$RepoUrl = "https://github.com/yourusername/xclock.git"
+$RepoUrl = "https://github.com/xscriptordev/xclock.git"
 $InstallDir = "$env:USERPROFILE\.cargo\bin"
 
 # Check if we are in the repo
