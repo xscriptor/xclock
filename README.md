@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![rust](https://xscriptordev.github.io/badges/languages/rust.svg) ![shell](https://xscriptordev.github.io/badges/languages/shell.svg) ![powershell](https://xscriptordev.github.io/badges/languages/powershell.svg)
+![rust](https://xscriptor.github.io/badges/languages/rust.svg) ![shell](https://xscriptor.github.io/badges/languages/shell.svg) ![powershell](https://xscriptor.github.io/badges/languages/powershell.svg)
 
 xclock is a terminal-based clock application written in Rust, inspired by `ttyclock`. It features a digital clock with ASCII art, countdown timers, and various customization options.
 
@@ -42,7 +42,7 @@ You can install xclock using the provided script. It will auto-detect your OS (A
 
 Or remotely:
 ```bash
-wget -O - https://raw.githubusercontent.com/xscriptordev/xclock/main/install.sh | bash
+wget -O - https://raw.githubusercontent.com/xscriptor/xclock/main/install.sh | bash
 ```
 
 ### Windows
