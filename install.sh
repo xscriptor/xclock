@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-REPO_URL="${REPO_URL:-https://github.com/xscriptordev/xclock.git}"
+REPO_URL="${REPO_URL:-https://github.com/xscriptor/xclock.git}"
 INSTALL_DIR="/usr/local/bin"
 TEMP_DIR="$(mktemp -d)"
 OS="$(uname -s)"
