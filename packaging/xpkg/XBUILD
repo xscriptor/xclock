@@ -1,0 +1,36 @@
+[package]
+name = "xclock"
+version = "0.1.0"
+release = 1
+description = "A ttyclock-like ASCII terminal clock and countdown timer written in Rust"
+url = "https://github.com/xscriptor/xclock"
+license = ["MIT"]
+arch = ["x86_64"]
+
+[dependencies]
+depends = ["glibc"]
+makedepends = ["cargo", "gcc", "rust"]
+
+[source]
+urls = []
+
+[build]
+prepare = """
+REPO_ROOT=\"$(cd \"$startdir/../..\" && pwd)\"
+rm -rf \"$SRCDIR/xclock-src\"
+mkdir -p \"$SRCDIR/xclock-src\"
+cp -a \"$REPO_ROOT/.\" \"$SRCDIR/xclock-src/\"
+rm -rf \"$SRCDIR/xclock-src/target\"
+"""
+
+build = """
+cd \"$SRCDIR/xclock-src\"
+cargo build --release --locked
+"""
+
+package = """
+cd \"$SRCDIR/xclock-src\"
+install -Dm755 \"target/release/xclock\" \"$PKGDIR/usr/bin/xclock\"
+install -Dm644 LICENSE \"$PKGDIR/usr/share/licenses/xclock/LICENSE\"
+install -Dm644 README.md \"$PKGDIR/usr/share/doc/xclock/README.md\"
+"""
