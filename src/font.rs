@@ -95,9 +95,5 @@ pub const FONT: [[[bool; WIDTH]; HEIGHT]; 11] = [
 ];
 
 pub fn get_digit(n: usize) -> &'static [[bool; WIDTH]; HEIGHT] {
-    if n > 10 {
-        &FONT[0]
-    } else {
-        &FONT[n]
-    }
+    if n > 10 { &FONT[0] } else { &FONT[n] }
 }

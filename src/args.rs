@@ -1,3 +1,4 @@
+use crate::color::AppColor;
 use clap::Parser;
 
 #[derive(Parser, Debug, Clone)]
@@ -16,8 +17,8 @@ pub struct Args {
     pub seconds: bool,
 
     /// Color (red, green, blue, yellow, cyan, magenta, white, black)
-    #[arg(short = 'r', long, default_value = "green")]
-    pub color: String,
+    #[arg(short = 'r', long, value_enum, default_value = "green")]
+    pub color: AppColor,
 
     /// 12-hour format
     #[arg(short = 't', long)]
@@ -26,4 +27,23 @@ pub struct Args {
     /// Hide the box borders
     #[arg(short = 'B', long)]
     pub no_box: bool,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn parses_valid_color() {
+        let args = Args::try_parse_from(["xclock", "--color", "cyan"]).unwrap();
+
+        assert_eq!(args.color, AppColor::Cyan);
+    }
+
+    #[test]
+    fn rejects_invalid_color() {
+        let result = Args::try_parse_from(["xclock", "--color", "purple"]);
+
+        assert!(result.is_err());
+    }
 }

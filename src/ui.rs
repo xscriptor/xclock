@@ -1,15 +1,15 @@
-use crate::{app::App, clock, color, font};
+use crate::{app::App, clock, font};
 use ratatui::{
+    Frame,
     layout::Rect,
     style::Style,
     text::{Line, Span},
     widgets::{Block, Borders, Paragraph},
-    Frame,
 };
 
 pub fn render(f: &mut Frame, app: &App) {
     let size = f.area();
-    let color = color::parse_color(&app.args.color);
+    let color = app.args.color.to_ratatui_color();
 
     let block = if app.args.no_box {
         Block::default()

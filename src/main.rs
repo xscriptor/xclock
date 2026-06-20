@@ -1,5 +1,5 @@
-mod args;
 mod app;
+mod args;
 mod clock;
 mod color;
 mod duration;
@@ -9,23 +9,23 @@ mod runtime;
 mod terminal;
 mod ui;
 
+use app::App;
 use args::Args;
 use clap::Parser;
-use app::App;
 use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args = Args::parse();
-
-    let mut terminal = terminal::setup_terminal()?;
-
     let mut app = App::new(args)?;
-    let res = runtime::run_app(&mut terminal, &mut app);
-    terminal::restore_terminal(&mut terminal)?;
 
-    if let Err(err) = res {
-        println!("{:?}", err)
-    }
+    let terminal = terminal::setup_terminal()?;
+    let mut terminal = terminal::TerminalGuard::new(terminal);
+
+    let res = runtime::run_app(terminal.terminal_mut(), &mut app);
+    let restore_res = terminal.restore();
+
+    restore_res?;
+    res?;
 
     Ok(())
 }

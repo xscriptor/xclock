@@ -50,3 +50,22 @@ pub fn digit_indices(h: u32, m: u32, s: u32, show_seconds: bool) -> Vec<usize> {
 
     digits
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn builds_digits_without_seconds() {
+        let digits = digit_indices(9, 5, 7, false);
+
+        assert_eq!(digits, vec![0, 9, 10, 0, 5]);
+    }
+
+    #[test]
+    fn builds_digits_with_seconds() {
+        let digits = digit_indices(12, 34, 56, true);
+
+        assert_eq!(digits, vec![1, 2, 10, 3, 4, 10, 5, 6]);
+    }
+}

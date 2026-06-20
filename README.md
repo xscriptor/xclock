@@ -1,9 +1,11 @@
 <h1 align="center">XClock</h1>
 
 <div align="center">
-  <img src="https://xscriptor.github.io/badges/languages/rust.svg" alt="Rust" />
-  <img src="https://xscriptor.github.io/badges/languages/shell.svg" alt="Shell" />
-  <img src="https://xscriptor.github.io/badges/languages/powershell.svg" alt="PowerShell" />
+  <img src="https://github.com/xscriptor/xclock/actions/workflows/ci.yml/badge.svg" alt="CI" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Rust-2024-DEA584.svg?logo=rust&logoColor=white" alt="Rust 2024" />
+  <img src="https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-6b7280.svg" alt="Linux macOS Windows" />
+  <img src="https://img.shields.io/badge/interface-CLI%20%2F%20TUI-5e81ac.svg" alt="CLI TUI" />
   <p><em>A terminal-based clock application written in Rust, inspired by <code>ttyclock</code>. It features a digital clock with ASCII art, countdown timers, and various customization options.</em></p>
   <p><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/clockface.svg" width="30" alt="XClock SVG" /></p>
 </div>

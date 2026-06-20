@@ -5,8 +5,8 @@ edition = "2024"
 description = "A ttyclock-like ASCII terminal clock and countdown timer written in Rust."
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/yourusername/xclock"
-homepage = "https://github.com/yourusername/xclock"
+repository = "https://github.com/xscriptor/xclock"
+homepage = "https://github.com/xscriptor/xclock"
 keywords = ["clock", "terminal", "ascii", "tui", "countdown", "ttyclock"]
 categories = ["command-line-utilities"]
 
