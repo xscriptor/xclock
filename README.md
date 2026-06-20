@@ -1,4 +1,4 @@
-<h1 align="center">XClock</h1>
+<h1 align="center">XClock <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/clockface.svg" width="30" alt="XClock SVG" /></h1>
 
 <div align="center">
   <img src="https://github.com/xscriptor/xclock/actions/workflows/ci.yml/badge.svg" alt="CI" />
@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-6b7280.svg" alt="Linux macOS Windows" />
   <img src="https://img.shields.io/badge/interface-CLI%20%2F%20TUI-5e81ac.svg" alt="CLI TUI" />
   <p><em>A terminal-based clock application written in Rust, inspired by <code>ttyclock</code>. It features a digital clock with ASCII art, countdown timers, and various customization options.</em></p>
-  <p><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/clockface.svg" width="30" alt="XClock SVG" /></p>
+  <p align="center"><img src="https://raw.githubusercontent.com/xscriptor/xassets/main/xrepos/apps/xclock/logo.svg" width="80" alt="Xclock logo" /></p>
 </div>
 
 <h2 id="menu">Menu</h2>
@@ -22,6 +22,7 @@
   <li><a href="#options">Options</a></li>
   <li><a href="#examples">Examples</a></li>
   <li><a href="#development">Development</a></li>
+  <li><a href="#x">X</a></li>
 </ul>
 
 <h2 id="preview">Preview</h2>
@@ -123,7 +124,20 @@
 <pre><code>cargo run --release</code></pre>
 
 <div align="center">
+
+<div id="x" align="center">
 <h2>X</h2>
 
-<a href="https://dev.xscriptor.com"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/ellipsis.svg" width="24" alt="X Web" /></a> & <a href="https://github.com/xscriptor"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/github.svg" width="24" alt="X Profile" /></a>
+<a href="https://dev.xscriptor.com">
+  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/verified-filled.svg" width="24" alt="X Web" />
+</a>
+ & 
+<a href="https://github.com/xscriptor">
+  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/github.svg" width="24" alt="X Github Profile" />
+</a>
+ & 
+<a href="https://www.xscriptor.com">
+  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/quotes.svg" width="24" alt="Xscriptor web" />
+</a>
+
 </div>
