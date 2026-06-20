@@ -1,8 +1,14 @@
 use crate::{app::App, input, ui};
-use ratatui::{backend::CrosstermBackend, Terminal};
-use std::{io, time::{Duration, Instant}};
+use ratatui::{Terminal, backend::CrosstermBackend};
+use std::{
+    io,
+    time::{Duration, Instant},
+};
 
-pub fn run_app(terminal: &mut Terminal<CrosstermBackend<io::Stdout>>, app: &mut App) -> io::Result<()> {
+pub fn run_app(
+    terminal: &mut Terminal<CrosstermBackend<io::Stdout>>,
+    app: &mut App,
+) -> io::Result<()> {
     let tick_rate = Duration::from_millis(250);
     let mut last_tick = Instant::now();
 
